@@ -104,3 +104,26 @@ Strings are equivalent to `[]byte`
 Go treat strings specially - as containers of text encoded in UTF-8. In other languages, strings are made of “characters”. In Go, the concept of a character is called a `rune` - it’s an integer that represents a Unicode code point
 
 [more about string](https://go.dev/blog/strings)
+
+## Variable (5)
+In Go, variables are explicitly declared and used by the compiler to e.g. check type-correctness of function calls.
+To put is simple, variable is container to store the data.
+
+To create variable in Go we can use keyword `var` and using `:=` syntax
+
+## Constant (6)
+Go supports constants of character, string, boolean, and numeric values.
+Constant value can't be changed.
+To create constant in Go, we can use keyword `const`.
+
+## Arrays (7)
+In Go, an array is a numbered sequence of elements of a **specific length**.
+
+## Slice (8)
+Slices are a key data type in Go, giving a more powerful interface to sequences than arrays.
+
+## Maps (9)
+Maps are Go’s built-in associative data type (sometimes called hashes or dicts in other languages).
+
+## For (10)
+`for` is Go’s only looping construct. Here are some basic types of `for` loops.
