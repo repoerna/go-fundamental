@@ -7,8 +7,9 @@ func main() {
   // Here we use range to sum the numbers in a slice. Arrays work like this too.
     nums := []int{2, 3, 4}
     sum := 0
-    for _, num := range nums {
-        sum += num
+    for index, value := range nums {
+        sum += value
+      fmt.Println(index, value)
     }
     fmt.Println("sum:", sum)
 
@@ -32,6 +33,16 @@ func main() {
 
   // range on strings iterates over Unicode code points. The first value is the starting byte index of the rune and the second the rune itself. See Strings and Runes for more details.
     for i, c := range "go" {
-        fmt.Println(i, c)
+        fmt.Println(i, string(c))
     }
+
+  fmt.Println("--------------------")
+  for _, v := range []int{1, 2, 3} {
+   if v%2 == 0 {
+     fmt.Println("genap")
+   } else {
+     fmt.Println("ganjil")
+   }
+    
+  }
 }

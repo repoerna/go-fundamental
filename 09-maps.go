@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-
+  
 	// To create an empty map, use the builtin make: make(map[key-type]val-type).
 	m := make(map[string]int)
 
@@ -34,8 +34,8 @@ func main() {
   // --------------------------------------------------------------------------
   
 	// The optional second return value when getting a value from a map indicates if the key was present in the map. This can be used to disambiguate between missing keys and keys with zero values like 0 or "". Here we didn’t need the value itself, so we ignored it with the blank identifier _.
-	val, isFilled := m["k1"]
-	fmt.Println("isFilled:", isFilled, val)
+	_, isFilled := m["k8"]
+	fmt.Println("isFilled:", isFilled)
 
   // --------------------------------------------------------------------------
   

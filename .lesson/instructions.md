@@ -1,4 +1,11 @@
 # Go Fundamental
+
+## Reading material
+- [What is Programing Language](https://codepen.io/repoerna/full/PoJRQYG)
+- [Declaration vs Initialization](https://www.toppr.com/guides/computer-science/introduction-to-c/data-types-variables-and-constants/declaration-of-variables/#:~:text=Declaration%20tells%20the%20compiler%20about,method%20of%20initializing%20the%20variable.)
+- [Learn go with test](https://quii.gitbook.io/learn-go-with-tests/)
+
+
 ## Overview
 ### Go History
 - Created at Google in 2007
@@ -219,3 +226,6 @@ Channels are the pipes that connect concurrent goroutines. You can send values i
 
 ## Defer (23)
 Defer is used to ensure that a function call is performed later in a program’s execution, usually for purposes of cleanup. defer is often used where e.g. ensure and finally would be used in other languages.
+
+## Assignment
+For the assigment see file `main.go`

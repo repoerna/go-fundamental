@@ -17,7 +17,7 @@ func main() {
     fmt.Println("len:", len(a))
 
   // Use this syntax to declare and initialize an array in one line.
-    b := [5]int{1, 2, 3, 4, 5}
+    b := [5]int{1, 2, 3}
     fmt.Println("dcl:", b)
 
   // Array types are one-dimensional, but you can compose types to build multi-dimensional data structures.

@@ -24,13 +24,15 @@ func main() {
 	fmt.Println("apd:", s)
 
 	// Slices can also be copy’d. Here we create an empty slice c of the same length as s and copy into c from s.
-	c := make([]string, len(s))
+	c := make([]string, len(s)-1)
 	copy(c, s)
 	fmt.Println("cpy:", c)
 
 	// Slices support a “slice” operator with the syntax slice[low:high]. For example, this gets a slice of the elements s[2], s[3], and s[4].
 	l := s[2:5]
 	fmt.Println("sl1:", l)
+	fmt.Println("sl1111:", s[1:4])
+  
 
 	// This slices up to (but excluding) s[5].
 	l = s[:5]

@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 // Here’s a function that takes two ints and returns their sum as an int.
-func plus(a int, b int) int {
+func plus(a int, b int) {
 
 	// Go requires explicit returns, i.e. it won’t automatically return the value of the last expression.
-	return a + b
+	 fmt.Println(a + b)
 }
 
 // When you have multiple consecutive parameters of the same type, you may omit the type name for the like-typed parameters up to the final parameter that declares the type.
@@ -15,11 +15,12 @@ func plusPlus(a, b, c int) int {
 }
 
 // The (int, int) in this function signature shows that the function returns 2 ints.
-func vals() (int, int) {
-	return 3, 7
+func vals() (int, string) {
+	return 3, "string"
 }
 
 // (res int) -> res will be declared
+// func anotherPlus() int {...}
 func anotherPlus() (res int) {
   // res can be used without redeclared
 	res = 1

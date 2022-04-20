@@ -29,7 +29,7 @@ func (r rect) perim() float64 {
     return 2*r.width + 2*r.height
 }
 
-The implementation for circles.
+// The implementation for circles.
 func (c circle) area() float64 {
     return math.Pi * c.radius * c.radius
 }
